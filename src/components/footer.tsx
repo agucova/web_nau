@@ -6,6 +6,7 @@ import {
     Box,
     chakra,
     Container,
+    Link as ChakraLink,
     Stack,
     Text,
     useColorModeValue,
@@ -84,7 +85,7 @@ export default function Footer({ navItems, twitterUsername, instagramUsername, y
                     spacing={4}
                     justify={{ base: 'center', md: 'space-between' }}
                     align={{ base: 'center', md: 'center' }}>
-                    <Text>Nueva Acción Universitaria UC | 2022</Text>
+                    <Text>Hecho con ❤️ por <ChakraLink href="https://agucova.dev">Agustín Covarrubias</ChakraLink></Text>
                     <Stack direction={'row'} spacing={6}>
                         <SocialButton label={'Twitter'} href={`https://twitter.com/${twitterUsername}`} >
                             <FaTwitter />

@@ -7,12 +7,8 @@ import {
     Box,
     Heading,
     Text,
-    IconButton,
     Button,
     VStack,
-    HStack,
-    Wrap,
-    WrapItem,
     FormControl,
     FormLabel,
     Input,
@@ -21,13 +17,10 @@ import {
     Textarea,
 } from '@chakra-ui/react';
 import {
-    MdPhone,
     MdEmail,
-    MdLocationOn,
-    MdFacebook,
     MdOutlineEmail,
 } from 'react-icons/md';
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { BsPerson } from 'react-icons/bs';
 
 const ContactForm = <Box p={4}>
     <Box>
@@ -58,7 +51,7 @@ const ContactForm = <Box p={4}>
                     </InputGroup>
                 </FormControl>
                 <FormControl id="name">
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel>Mensaje</FormLabel>
                     <Textarea
                         borderColor="gray.300"
                         _hover={{

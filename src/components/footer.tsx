@@ -64,7 +64,7 @@ export default function Footer({ navItems, twitterUsername, instagramUsername, y
                 <Stack direction={'row'} spacing={6}>
                     {
                         navItems.map(navItem => (
-                            <Link to={navItem.link}>
+                            <Link to={navItem.link} key={navItem.name}>
                                 <Text>{navItem.name}</Text>
                             </Link>
                         ))

@@ -68,7 +68,7 @@ export default function Navbar({ navItems }: NavProps) {
                         fontSize={'sm'}
                         fontWeight={400}
                         variant={'link'}
-                        href={"https://linktr.ee/nauinterno"}>
+                        href={"https://linktr.ee/nau.uc"}>
                         Links 🔗
                     </Button>
                     <Button

@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { Heading, Container } from '@chakra-ui/react'
 
+
 const OurHistoryPage = () => {
     return (
         <Layout pageTitle="Nuestra historia">

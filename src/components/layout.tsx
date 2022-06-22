@@ -6,7 +6,7 @@ import SEO from './seo'
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className='p-20'>
-      <SEO />
+      <SEO title={pageTitle} />
       <main>
         {children}
       </main>

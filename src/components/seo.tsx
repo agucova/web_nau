@@ -17,6 +17,8 @@ const SEO = ({ title, description, image, article }) => {
         siteUrl,
         defaultImage,
         twitterUsername,
+        language,
+        locale
     } = site.siteMetadata
 
     const seo = {
@@ -27,7 +29,9 @@ const SEO = ({ title, description, image, article }) => {
     }
 
     return (
-        <Helmet title={seo.title} titleTemplate={titleTemplate}>
+        <Helmet title={seo.title} titleTemplate={titleTemplate} htmlAttributes={{
+            lang: language
+        }}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
 
@@ -36,6 +40,8 @@ const SEO = ({ title, description, image, article }) => {
             {(article ? true : null) && <meta property="og:type" content="article" />}
 
             {seo.title && <meta property="og:title" content={seo.title} />}
+
+            { locale && <meta property="og:locale" content={locale} /> }
 
             {seo.description && (
                 <meta property="og:description" content={seo.description} />
@@ -86,6 +92,8 @@ const query = graphql`
         siteUrl
         defaultImage: image
         twitterUsername
+        language
+        locale
       }
     }
   }

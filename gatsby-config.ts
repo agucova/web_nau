@@ -8,6 +8,8 @@ const config: GatsbyConfig = {
     description: `La Nueva Acción Universitaria (NAU) es un movimiento político universitario de centro-izquierda de la Universidad Católica de Chile.`,
     image: `/assets/images/banner-meta.png`,
     twitterUsername: `@naupuc`,
+    language: "es",
+    locale: "es_CL",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

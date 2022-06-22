@@ -1,2 +1,4 @@
-static/mails/bienvenide/index.html
-static/mails/fichaje_exitoso/index.html
+node_modules/
+.cache/
+public
+src/gatsby-types.d.ts

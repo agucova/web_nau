@@ -9,6 +9,7 @@ import {
     Stack,
     VStack
 } from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 
 
 
@@ -48,7 +49,7 @@ const Hero = () => {
                         _hover={{
                             bg: '#2BB97F',
                         }}>
-                        Súmate al movimiento
+                        Súmate al movimiento <ChevronRightIcon />
                     </Button>
                 </Stack>
             </Stack>

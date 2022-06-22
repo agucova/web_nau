@@ -7,7 +7,8 @@ import {
     Text,
     Button,
     Stack,
-    VStack
+    VStack,
+    color
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
@@ -15,6 +16,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const Hero = () => {
     return (
+        <Box className="hero-background">
         <Container maxW="xl">
             <Stack
                 as={Box}
@@ -22,17 +24,19 @@ const Hero = () => {
                 spacing={{ base: 6, md: 10 }}
                 py={{ base: 20, md: 36 }}>
                 <Heading
-                    fontWeight={600}
                     fontSize={{ base: '4xl', md: '6xl' }}
-                    lineHeight={'110%'}>
-                    Una nueva UC para<br />
+                    lineHeight={'110%'}
+                    color={"white"}
+                    fontFamily="Climate Crisis"
+                    >
+                    Una nueva UC para
                     un nuevo Chile.
                 </Heading>
                 <VStack spacing="30px">
-                    <Text color={'gray.500'} fontSize="xl">
+                        <Text color={"white"} fontSize="xl">
                         Somos un movimiento político universitario de centro-izquierda fundado en la Universidad Católica de Chile.
                     </Text>
-                    <Text color={'gray.500'} fontSize="xl">
+                        <Text color={"white"} fontSize="xl">
                         Nos caracteriza ser un movimiento activo, propositivo, autónomo, tolerante, pluralista, progresista y <b>profundamente democrático.</b>
                     </Text>
                 </VStack>
@@ -54,6 +58,7 @@ const Hero = () => {
                 </Stack>
             </Stack>
         </Container>
+        </Box>
     )
 }
 

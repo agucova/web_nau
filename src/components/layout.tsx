@@ -30,7 +30,7 @@ const Layout = ({ pageTitle, children }) => {
       query={pageMetadataQuery}
       render={data => (
         <div>
-          <SEO />
+          <SEO title={pageTitle} />
           <header>
             <Navbar navItems={data.site.siteMetadata.menuLinks} />
           </header>
